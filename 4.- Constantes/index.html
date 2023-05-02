@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Constantes</title>
+</head>
+<body>
+    <h1>Constantes</h1>
+
+    <script>
+
+        // Desde ECMA6 tenemos la palabra reservada "const" para declarar variables constantes
+
+        const PI = 3.1416;
+        console.log(PI);
+
+        // NO se puede declarar constantes vacías, sin darle un valor.
+        // const NUEVE;
+
+        // PI = 3.15; 
+        //no se puede redeclarar el valor de una constante
+
+        const objeto = {
+            nombre: "Jon",
+            edad: 35
+        }
+
+        const colores = ["blanco", "negro", "azul"];
+
+        console.log(objeto);
+        console.log(colores);
+
+        objeto.apellido = "Arce"; //agregamos una variable al objeto
+        colores.push("anaranjado"); //Agregamos un color al array
+
+        console.log(objeto);
+        console.log(colores);
+        // Ahora cambiamos las declaraciones del objeto y colores por "const" y si lo volvemos a imprimir comprobamos que no ocurre ningún error, esto porque son valores Compuestos, no cambiamos su valor si no la referencia de estos.
+
+        // Si a lo largo del flujo del programa el valor de una variable va a cambiar, se declara con LET, en cambio si tu variable va ser siempre un objeto o un array, un string, etc que no va cambiar utiliza CONST.
+
+        
+
+    </script>
+
+</body>
+</html>
