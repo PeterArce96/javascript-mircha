@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Strings</title>
+</head>
+<body>
+    <h1>Strings</h1>
+
+    <script>
+
+        // Las propiedades son características que describen o definen algo del objeto
+        // Las funciones van a ser acciones que el objeto reliza. Todos terminan con paréntesis ();
+
+        let nombre = "Peter";
+        let apellido = "Arce";
+
+        let saludo = new String("Hola Mundo");
+        let espacios = "                Hola           ";
+        let lorem = "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Facere perspiciatis, quas nam ea totam dicta cum laudantium expedita in quo, hic quasi deserunt quod ad maiores omnis natus odit iure minima non harum pariatur! Dignissimos officia ipsum, quibusdam neque eos qui praesentium minima. Non consequatur quae laborum quo ut numquam?"
+
+        console.log(nombre, apellido, saludo);
+        console.log(nombre.length, apellido.length, saludo.length);
+
+        // .toUpperCase()--> método para Mayúsculas
+        console.log(nombre.toUpperCase());
+        // .toLowerCase()--> método para Minúsculas
+        console.log(apellido.toLowerCase());
+        // .includes() --> método para comprobar si el texto ingresado está incluido o no en la variable.
+        console.log(saludo.includes("Hello")); //false
+        // .trim() --> quitar los espacios en blanco
+        console.log(espacios.trim());
+        // .split() --> generar un arreglo separando el string por un separador ingresado.
+        console.log(lorem.split(" ")); //separa toda la variable lorem por espacios
+
+    </script>
+    
+
+</body>
+</html>
