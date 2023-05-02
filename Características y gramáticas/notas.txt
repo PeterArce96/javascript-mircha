@@ -1,0 +1,65 @@
+1 - ISOMORFISMO
+Iso: igual
+Fismo: forma
+Hacer una aplicación de principio a fin con una sola tecnología
+
+Javascript es el único lenguaje capaz de ejecutarse en las 3 capas de una aplicación:
+1.- Frontend (javascript)
+2.- Backend (Node.js)
+3.- Persistencia de Datos (MongoDB, Couch DB, Firebase, etc).
+
+Aplicaciones donde se usa Javascript
+- Diseño y desarrollo web
+- Hacer videojuegos
+- Experiencias 3D, Realidad Aumentada, Realidad Virtual
+- Controlar hardware
+- Aplicaciones hibridas y Móviles.
+- Machine Learning
+
+Características
+- Lenguaje de Alto Nivel --> No tenemos que preocuparnos por gestión de memoria, rendimiento de computadora.
+- Interpretado y Dinámico --> No necesita una fase de compilación y luego pasar a Ejecución, js se compila en tiempo de ejecución.
+- Débilmente tipado --> Una variable no es siempre solo un tipo de dato todo el programa, una variable puede empezar siendo String y por el flujo del programa puede llegar a ser un objeto, etc.
+- Multiparadigma --> Podemos usar programación estructurada, orientada a objetos, etc.
+- Sensible a Mayúsculas y Minúsculas --> La variable "PERRO" no es igual a "perro", son diferentes
+- No necesita los puntos y coma al final (;).
+
+Escritura de código
+- Los nombres de identificadores (funciones, variables, etc) deben comenzar con:
+ *una letra o un signo de dolar ($) o un guión bajo (_)
+ *nunca con números o caracteres especiales.
+- Recomendaciones
+ *Archivos --> snake_case: mi_archivo.js
+ *Constantes --> UPPER_CASE: const UNA_CONSTANTE = 'Soy una constante';
+ *Clases --> UpperCamelCase: 
+    class SerHumano{
+        constructor (nombre, genero){
+            this.nombre = nombre
+            this.genero = genero
+        }
+    }
+ *lowerCamelCase --> Objetos: 
+    const unObjeto = {
+        nombre: 'Jonathan'
+    }
+
+Ordenamiento de código
+1.- Importación de módulos
+2.- Declaración de variables
+3.- Declaración de funciones
+4.- Ejecución de código
+
+Tipos de Datos
+1.- Primitivos: se accede directamente al valor.
+ *String
+ *number
+ *boolean
+ *null
+ *undefined
+ *NaN
+2.-Compuestos: se accede a la referencia del valor.
+ *Object = {}
+ *array = []
+ *function () {}
+ *Class {}
+ *etc.
