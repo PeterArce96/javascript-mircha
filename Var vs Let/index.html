@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fundamentos de Javasctipt</title>
+</head>
+<body>
+    <h1>Fundamentos de Javascript</h1>
+
+    <script>
+
+        var hola = "Hola Mundo";
+        console.log(hola); //Hola Mundo
+
+        // Cuando uno declara una variable con VAR, esta va estar disponible en el ámbito global. Ya no se debe usar VAR.
+
+        // Se debe utilizar LET para una variable que exista en el bloque que ha sido definido. Las variables definidad con LET no se agregan a la variable global de javascript (window), mientras que Var si lo hace
+        let hello = "Hello World";
+        console.log(hello);
+
+        // Ambito de bloque, bloque de código separado por llaves
+        var musica = "Rock";
+        console.log("Variable Música antes del Bloque", musica);
+        // Esto es un bloque
+        {
+            var musica = "Pop";
+            console.log("Variable Música dentro del Bloque", musica);
+        }
+
+        console.log("Variable Música después del Bloque", musica); //Se produce el hoisting, js sube el valor de POP fuera del bloque, por eso se imprime POP.
+
+        // AHORA CON LET
+        console.log("**********LET*********");
+        // Ambito de bloque, bloque de código separado por llaves
+        let musica2 = "Rock";
+        console.log("Variable Música antes del Bloque", musica2);
+        // Esto es un bloque
+        {
+            let musica2 = "Pop";
+            console.log("Variable Música dentro del Bloque", musica2);
+        }
+
+        console.log("Variable Música después del Bloque", musica2);//No se produce hoisting porque la variable está declarada con LET por lo tanto solo está disponible dentro de su bloque, por eso se imprime "Rock"
+
+
+    </script>
+
+</body>
+</html>
